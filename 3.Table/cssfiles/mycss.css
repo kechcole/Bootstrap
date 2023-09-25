@@ -1,0 +1,23 @@
+#small-image {
+    width: 100%;
+    height: 700px;
+}
+
+/* Display elements side by side */
+.parent-data-element {
+    display: flex;
+    flex-direction: row;
+}
+
+.child {
+    border: 0px solid blueviolet;
+    margin: 10px;   
+}
+.child:nth-child(1) {
+    width: 50%;
+    height: 700px;
+}
+
+.child:nth-child(2) {
+    margin-right: 20px;
+}

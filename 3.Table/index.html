@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables with Boostrap</title>
+
+    <!-- My css files  -->
+    <link rel="stylesheet" href="cssfiles/mycss.css">
+    
+    <!-- Bootstrap version 3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <H1>1. Introduction.</H1>
+    <p>
+        A table is use to store and display data systematically
+        , its ordered in a columns most often making
+        data easy to understand and read. Data is stored
+        in cell as a single unit. <br>
+        Boostrap add excuisite styling creating differenxce
+        in layout and design when compared to traditional
+        html layout. <br>
+        To set up boostrap we need to link up various remote
+        files/CDN's: css, js and jquery. To a create a table
+        with boostrap we need to include a class <i><b>.table</b></i>
+        in a table and it will will be styled with light padding and
+        horizontal dividers.
+    </p>
+    <h1>2. Examples.</h1>
+
+    <h2>2.1 Basic Table.</h2>
+    <p>
+        Lets create a table containing company details.
+        By including a class in the table tag, the table
+        automatically occupies the whole page, horizontal
+        dividers set and information inside padded.
+    </p>
+
+    <h4>2.1.1 Table 1</h4>
+    <div class="parent-data-element">
+        <div class="child" id="image-code" >
+            <img src="Images/1.png" alt="table1-code" id="small-image">
+        </div>
+        <div class="child" id="html-code">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Company</th>
+                        <th>Depot Location</th>
+                        <th>Income 2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <TD>1</TD>
+                        <td>Keroche Breweries</td>
+                        <td>Naiobi Road A</td>
+                        <td>2.1 Million</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>East African Breweries</td>
+                        <td>Eldoret Depot</td>
+                        <td>4.5 Million</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fresh Point Distributorss</td>
+                        <td>Mombasa</td>
+                        <td>10.7 Million</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+
+    <h4>2.1.2 Table 2</h4>
+    <p>
+        Lets add zebra stripes to the table, use table class
+        <i><b>.table-striped</b></i>
+    </p>
+    <div class="parent-data-element">
+        <div class="child" id="image-code" >
+            <img src="Images/2.png" alt="table2-code" id="small-image">
+        </div>
+        <div class="child" id="html-code">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Company</th>
+                        <th>Depot Location</th>
+                        <th>Income 2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <TD>1</TD>
+                        <td>Keroche Breweries</td>
+                        <td>Naiobi Road A</td>
+                        <td>2.1 Million</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>East African Breweries</td>
+                        <td>Eldoret Depot</td>
+                        <td>4.5 Million</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fresh Point Distributorss</td>
+                        <td>Mombasa</td>
+                        <td>10.7 Million</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>2.1.3 Table 3</h4>
+    <p>
+        Lets add borders to the table, use table class
+        <i><b>.table-bordered</b></i>
+    </p>
+    <div class="parent-data-element">
+        <div class="child" id="image-code" >
+            <img src="Images/3.png" alt="table3-code" id="small-image">
+        </div>
+        <div class="child" id="html-code">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Company</th>
+                        <th>Depot Location</th>
+                        <th>Income 2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <TD>1</TD>
+                        <td>Keroche Breweries</td>
+                        <td>Naiobi Road A</td>
+                        <td>2.1 Million</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>East African Breweries</td>
+                        <td>Eldoret Depot</td>
+                        <td>4.5 Million</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fresh Point Distributorss</td>
+                        <td>Mombasa</td>
+                        <td>10.7 Million</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>2.1.4 Table 4</h4>
+    <p>
+        Lets add hover to the table, when mouse  is over
+        a row its highlighted, use table class <i><b>.table-hover</b></i>
+    </p>
+    <div class="parent-data-element">
+        <div class="child" id="image-code" >
+            <img src="Images/4.png" alt="table4-code" id="small-image">
+        </div>
+        <div class="child" id="html-code">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Company</th>
+                        <th>Depot Location</th>
+                        <th>Income 2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <TD>1</TD>
+                        <td>Keroche Breweries</td>
+                        <td>Naiobi Road A</td>
+                        <td>2.1 Million</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>East African Breweries</td>
+                        <td>Eldoret Depot</td>
+                        <td>4.5 Million</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fresh Point Distributorss</td>
+                        <td>Mombasa</td>
+                        <td>10.7 Million</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h4>2.1.5 Table 5</h4>
+    <p>
+        Lets make table more compact by cutting cell 
+        padding in half, use table class <i><b>.table-condensed</b></i>
+    </p>
+    <div class="parent-data-element">
+        <div class="child" id="image-code" >
+            <img src="Images/5.png" alt="table5-code" id="small-image">
+        </div>
+        <div class="child" id="html-code">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Company</th>
+                        <th>Depot Location</th>
+                        <th>Income 2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <TD>1</TD>
+                        <td>Keroche Breweries</td>
+                        <td>Naiobi Road A</td>
+                        <td>2.1 Million</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>East African Breweries</td>
+                        <td>Eldoret Depot</td>
+                        <td>4.5 Million</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Fresh Point Distributorss</td>
+                        <td>Mombasa</td>
+                        <td>10.7 Million</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <h2>2.2 Contextual Classes.</h2>
+    <p>
+        Contextual classes are use to colour table rows 
+        and individual cells. 
+    </p>
+
+    <h4>2.2.1 Table 6.</h4>
+    <p>
+        Colour various rows and cells. 
+        Condense and allow hover and then colour them
+        based on various properties. We also made in responsive 
+
+    </p>
+    <div class="parent-data-element">
+        <div class="child" id="image-code" >
+            <img src="Images/6.png" alt="table5-code" id="small-image">
+        </div>
+        <div class="child" id="html-code">
+            <table class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Company</th>
+                            <th>Depot Location</th>
+                            <th>Income 2023</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <TD>1</TD>
+                            <td class="active">Keroche Breweries</td>
+                            <td class="success">Naiobi Road A</td>
+                            <td class="warning">2.1 Million</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>East African Breweries</td>
+                            <td>Eldoret Depot</td>
+                            <td class="danger">-4.5 Million</td>
+                        </tr>
+                        <tr class="info">
+                            <td>3</td>
+                            <td>Fresh Point Distributorss</td>
+                            <td>Mombasa</td>
+                            <td>10.7 Million</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table>    
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Jquery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Boostrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
