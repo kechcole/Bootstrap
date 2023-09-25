@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itroduction To Bootstrap.</title>
+
+    <!-- Boostrap  version 5 CSS CDN  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+ -->
+
+    <!-- Bootstrap version 3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="CSS/mycss.css">
+
+
+</head>
+
+<body>
+    <h1>Boostrap.</h1>
+
+    <h2>1. Introduction.</h2>
+    <p>
+        Bootstrap is a powerfull frontend CSS framework tool kit
+        used to develop responsive and mobile-friendly websites.
+        It contains a grid system that can be scaled up to 12
+        columns depending on the size of the device. Using
+        classes, bootstrap can enhance layouts by inmproving
+        beauty and easthetics. <br>
+        Sample classes include : <b>.row , .col-xs-4, .container
+            .container-fluid</b>
+        We need to set up boostrap by importing various remote plugins
+        such as JS, JQuery and Bootstrap itself. <br> <br>
+
+        This technology uses a series of containers, rows and columns
+        to align and layout content. <br>
+        1. <b>Containers </b> provide a system of centering and horizintally
+        pad content. <br>
+        2.
+    <ol>
+        <li><b>Containers </b> provide a system of centering and horizintally
+            pad content.</li>
+        <li><b>Rows</b> wrap up columns with gutters acting as separators
+            between each oc them. <br>
+            This horizontal padding ensure items are visually aligned down
+            the left side. </li>
+        <li>Contents are placed inside <b>columns</b> and only columns
+            may be imediate children of rows. </li>
+        <li>Grid columns without a specific width will be equally spaced</li>
+        <li>Column classes will define the number of columun one wishes
+            to have out of the possible 12 per row. i.e col-4 has three
+            equal-width columns accross.</li>
+        <li>Each devices depending on size has a class prefix,
+            <b>.col- / .col-xs</b> for <b>extra small</b> devices(less than 576px),
+            <b>.col-sm</b> for small (greater than 576px),
+            <b>.col-md</b> for medium (grater than 768px),
+            <b>.col-lg</b> for large (greater than 992px),
+            <b>.col-xl</b> for extra large (greater than 1200px)
+        </li>
+    </ol>
+
+    </p>
+
+    <h2>2. Grid Options and Example.</h2>
+
+    <h4>2.1 Stacked to Horizontal.</h4>
+
+    <p>
+        In this example we are going to use the <b>.col-md-*</b>
+        where * represents a number for different layouts. <br>
+        Lets create a 12 column row. This can be created by nesting
+        12 div elements with class <b>col-md-1</b> inside another div
+        with class row. To have some visual we will use css to set
+        the colour height and border width.
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">col-md-1hhhhhhhh</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1hhhhhhh</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+            <div class="col-md-1">col-md-1</div>
+        </div>
+    </div>
+
+    <p>
+        In the same way we can define other combinations like
+        2, 3, 4, 6, or 8. You will note for smaller devices the next
+        row will fill up the entire next row.
+    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">.col-md-3</div>
+            <div class="col-md-3">.col-md-3</div>
+            <div class="col-md-3">.col-md-3</div>
+            <div class="col-md-3">.col-md-3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8">.col-md-8</div>
+            <div class="col-md-4">.col-md-4</div>
+        </div>
+    </div>
+
+    <h4>2.2 Multi Device Support. </h4>
+    <p>
+        Multiple behaviours can be defined for different devices. <br> <br>
+        In the first row, we have a class that breaks it to 8 columns(.col-md8)
+        and 4 columns(.col-md-4) for medium devices and another class defining the
+        layout for each column on small sized devices. In this case the
+        first column will fill up the entire row (.col-sm-12) and consequent
+        column will end up in a new line but occupy half of the width of that row
+        (.col-sm-6)
+    </p>
+    <div class="row">
+        <div class="col-sm-12 col-md-8">.col-sm-12 .col-md-8</div>
+        <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    </div>
+
+
+    <h2>3. Offsetting and Nesting Columns. </h2>
+
+    <h4>3.1 Offsetting columns. </h4>
+
+    <p>
+        So if we didn't want to set layouts that fill the entire row, column
+        offsets can be used. A column is added by adding a bootsrap class. <br>
+
+        In the first row, for medium size devices, create a row that with 3 elements,
+        the first on the left, third is empty and resides in the middle,
+        and then the last one is offset to far right by 4 columns. By default in
+        small devices, each except the empty one will occupy
+        100% of the width and in different rows. <br>
+        The second row has two elements each offset by 3 columns to the right,
+        meaning we will have an empty element occupying 3 columns, then
+        another visible element ocuppying 3 columns, follwed by an empty
+        element also with 3 columns, and finnally a visible element with 3 columns.
+        That makes a total of 3 X 4 = 12 column space. <br>
+        Lastly, our row will have one visible element and another
+        empty. Each occupy 50% of the with but the former has been ofset by 3 columns.
+    </p>
+
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+    </div>
+
+    <h4>3.2 Nesting Elements. </h4>
+    <p>
+        A nested element can be added by simply inserting a row inside another
+        element. <br>
+        In the example below, two elements: one occupying 6 columns in 
+        medium devices and 8 in small ones, and another one with 4 column 
+        width on samll device and 6 on medium have been nested inside a 
+        row with an element of width 8 columns. The nested elements 
+        will occupy 100% width of the parent, 8 column width view port size.  
+    </p>
+
+    <div class="row">
+        <div class="col-md-8">
+            .col-md-8
+            <div class="row">
+                <div class="col-sm-8 col-md-6">.col-sm-8 .col-md-6</div>
+                <div class="col-sm-4 col-md-6">.col-sm-4 .col-md-6</div>
+            </div>
+        </div>
+    </div>
+
+    <p>
+        
+    </p>
+
+
+
+
+
+
+
+
+
+    <!-- Jquery CDN  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Boostrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
